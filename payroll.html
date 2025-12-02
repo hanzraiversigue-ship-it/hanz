@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+    <html lang="eng">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Payroll</title>
+<style>
+    body {
+      background: linear-gradient(120deg, #BCCCDC, #D9EAFD);
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #1A3D64;
+      text-align: center;
+      justify-content: center;
+      
+      
+    }
+
+    header {
+      background: #9AA6B2   ;
+      color: white;
+      padding: 24px 0;
+      text-align: center;
+      font-size: 2em;
+      letter-spacing: 2px;
+      box-shadow: 0 2px 10px #0003;
+      font-weight: bold;
+    }
+
+    nav {
+      background: #BCCCDC;
+      padding: 12px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.08em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #000000;
+      border: flex;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      background: linear-gradient(120deg, #A3D8FF, #94FFD8);
+    }
+
+    p {
+    font-size: 1rem;
+    color: black;
+    }
+
+    input {
+     margin:  5px 5px 5px 0; 
+     padding: 10px;
+     width: 58rem;
+     border-radius: 10px;
+     font-size: 20px;
+    
+    }
+
+    button { 
+    background: #1A3D64;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 5px;
+    }
+
+    button:hover{
+        color: #071952;
+      border: flex;
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-weight: bold;
+      background: linear-gradient(120deg, #071952, #94FFD8);
+    }
+
+    .section {
+    margin-bottom: 15px;
+    }
+
+    .container {
+    width: 50%;
+    max-width: 1500px;
+    background: #fff;
+    padding: 24px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    text-align: left;      
+    margin: 40px auto;
+    }
+
+    .container1 {
+    width: 50%;
+    max-width: 1500px;
+    background: #fff;
+    padding: 24px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    text-align: left;      
+    margin: 40px auto;
+    }
+
+    .container1:hover{
+      color: #071952;
+      border: flex;
+      padding: 20px;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+    
+    .red {
+       color: red; 
+    }
+
+</style>
+</head>
+
+<body>
+    <header>
+       Payroll Calculator
+    </header>
+
+    <div class="container">
+        <h1>Employee's Info</h1>
+        <label for="name">Employee's name</label>
+            <input type="text" id="name" /><br/>
+            <label for="rate">Daily rate:</label>
+            <input type="number" id="rate" /><br/>
+       
+    </div>
+
+    <div class="container">
+        <div class="section">
+            
+            <h1>Enter Numbers To Calculate Your Salary:</h1>
+             <h4>Note: Enter 1 for Present and 0 for Absent</h4>
+             <label for="d1">Day 1:</label>
+            <input type="number" id="d1" min="0" max="1" placeholder="1 for present, 0 for absent"><br/>
+            <label for="d2">Day 2:</label>
+            <input type="number" id="d2" min="0" max="1" placeholder="1 for present, 0 for absent" ><br/>
+            <label for="d3">Day 3:</label>
+            <input type="number" id="d3" min="0" max="1" placeholder="1 for present, 0 for absent"><br/>
+            <label for="d4">Day 4:</label>
+            <input type="number" id="d4" min="0" max="1" placeholder="1 for present, 0 for absent"><br/>
+            <label for="d5">Day 5:</label>
+            <input type="number" id="d5" min="0" max="1" placeholder="1 for present, 0 for absent"><br/>
+            <label for="d6">Day 6:</label>
+            <input type="number" id="d6" min="0" max="1" placeholder="1 for present, 0 for absent"><br/>
+            <label for="d7">Day 7:</label>
+            <input type="number" id="d7" min="0" max="1" placeholder="1 for present, 0 for absent"><br/>
+            <label for="d8">Day 8:</label>
+            <input type="number" id="d8" min="0" max="1" placeholder="1 for present, 0 for absent"><br/>
+            <label for="d9">Day 9:</label>
+            <input type="number" id="d9" min="0" max="1" placeholder="1 for present, 0 for absent"><br/>
+            <label for="d10">Day 10:</label>
+            <input type="number" id="d10" min="0" max="1" placeholder="1 for present, 0 for absent"><br/>
+            <label for="d11">Day 11:</label>
+            <input type="number" id="d11" min="0" max="1" placeholder="1 for present, 0 for absent"><br/>
+            <label for="d12">Day 12:</label>
+            <input type="number" id="d12" min="0" max="1" placeholder="1 for present, 0 for absent"><br/>
+            <label for="d13">Day 13:</label>
+            <input type="number" id="d13" min="0" max="1" placeholder="1 for present, 0 for absent"><br/>
+            <label for="d14">Day 14:</label>
+            <input type="number" id="d14" min="0" max="1" placeholder="1 for present, 0 for absent"><br/>
+            <label for="d15">Day 15:</label>
+            <input type="number" id="d15" min="0" max="1" placeholder="1 for present, 0 for absent"><br/>
+        </div>
+            <button onclick="calculateSum()">Calculate Sum</button>
+            <div class="container1">
+            <h2 id="work"></h2>
+            <h2 id="rateper"></h2>
+            <h2 id="gross"></h2>
+            <h2 id="bawas"></h2>
+            <div class="red">
+            <h2 id="sss"></h2>
+            <h2 id="phil"></h2>
+            <h2 id="pag"></h2>
+            <h2 id="oth"></h2>
+            </div>
+            <h2 id="Deduction"></h2>
+            <h2 id="finalnet"></h2>
+        </div>
+    </div>
+  </div>
+
+    <script>
+function calculateSum() {
+
+    const d1 = parseFloat(document.getElementById('d1').value);
+    const d2 = parseFloat(document.getElementById('d2').value);
+    const d3 = parseFloat(document.getElementById('d3').value);
+    const d4 = parseFloat(document.getElementById('d4').value);
+    const d5 = parseFloat(document.getElementById('d5').value);
+    const d6 = parseFloat(document.getElementById('d6').value);
+    const d7 = parseFloat(document.getElementById('d7').value);
+    const d8 = parseFloat(document.getElementById('d8').value);
+    const d9 = parseFloat(document.getElementById('d9').value);
+    const d10 = parseFloat(document.getElementById('d10').value);
+    const d11 = parseFloat(document.getElementById('d11').value);
+    const d12 = parseFloat(document.getElementById('d12').value);
+    const d13 = parseFloat(document.getElementById('d13').value);
+    const d14 = parseFloat(document.getElementById('d14').value);
+    const d15 = parseFloat(document.getElementById('d15').value);
+    const rateperday = parseFloat(document.getElementById('rate').value);
+    const name = document.getElementById('name').value;
+    const present = d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9 + d10 + d11 + d12 + d13 + d14 + d15;
+    Gross = present*rateperday
+    sss = 0.05*Gross
+    philhealth = 0.03*Gross
+    pagibig = 200
+    others = 1000
+    totaldeduction = sss + philhealth + pagibig + others
+    net = Gross - totaldeduction
+
+    if (isNaN(d1) || isNaN(d2) || isNaN(d3) || isNaN(d4) || isNaN(d5) || isNaN(d6) 
+    || isNaN(d7) || isNaN(d8) || isNaN(d9) || isNaN(d10) || isNaN(d11) 
+  || isNaN(d12) || isNaN(d13) || isNaN(d14) || isNaN(d15) || isNaN(rateperday) || name==="") {
+            document.getElementById("work").innerText = "Please enter all the required fields";
+            document.getElementById("rateper").innerText = "";
+            document.getElementById("gross").innerText = "";
+            document.getElementById("bawas").innerText = "";
+            document.getElementById("sss").innerText = "";
+            document.getElementById("phil").innerText = "";
+            document.getElementById("pag").innerText = "";
+            document.getElementById("oth").innerText = "";
+            document.getElementById("Deduction").innerText = "";
+            document.getElementById("Net").innerText = "";
+            document.getElementById("finalnet").innerText = "";
+            return;
+  }
+
+
+            document.getElementById("work").innerText = "Total Number of Days Work : " + present;
+            document.getElementById("rateper").innerText = "Rate Per day : " + rateperday;
+            document.getElementById("gross").innerText = "Gross Salary : " + Gross;
+            document.getElementById("bawas").innerText = "Deductions :";
+            document.getElementById("sss").innerText = "SSS : " + sss;
+            document.getElementById("phil").innerText = "Philhealth : " + philhealth;
+            document.getElementById("pag").innerText = "Pag-Ibig : " + pagibig;
+            document.getElementById("oth").innerText = "Others : " + others;
+            document.getElementById("Deduction").innerText = "Total Deductions : " + totaldeduction;
+            document.getElementById("finalnet").innerText = name + "'s Net salary is " + net;
+            return;
+
+}
+
+
+
+
+
+</script>
+</body>
+</html>
